@@ -13,38 +13,32 @@ int main() {
     scanf(" %d", &option);
     switch (option) {
         case NO_ORD:
-            seqSearch(buscaSize, vectorSize);
+            noOrdSeqSearch(buscaSize, vectorSize);
             break;
         case INSERT_W_SEQ:
-            insertionSort(vectorSize);
-            seqSearch(buscaSize, vectorSize);
+            insOrdSeqSearch(buscaSize, vectorSize);
             break;
         case SHELL_W_SEQ:
-            shellSort(vectorSize);
-            seqSearch(buscaSize, vectorSize);
+            sheOrdSeqSearch(buscaSize, vectorSize);
             break;
         case QUICK_W_SEQ:
-            quickSort(0, vectorSize - 1);
-            seqSearch(buscaSize, vectorSize);
+            quiOrdSeqSearch(buscaSize, vectorSize);
             break;
         case INSERT_W_BIN:
-            insertionSort(vectorSize);
-            binSearch(buscaSize, vectorSize);
+            insOrdBinSearch(buscaSize, vectorSize);
             break;
         case SHELL_W_BIN:
-            shellSort(vectorSize);
-            binSearch(buscaSize, vectorSize);
+            sheOrdBinSearch(buscaSize, vectorSize);
             break;
         case QUICK_W_BIN:
-            quickSort(0, vectorSize - 1);
-            binSearch(buscaSize, vectorSize);
+            quiOrdBinSearch(buscaSize, vectorSize);
             break;
         default:
             break;
     }
-    for (int i = 0; i < vectorSize; i++) {
-        printf("%lf\n", vector[i]);
-    }
+    /* for (int i = 0; i < vectorSize; i++) { */
+    /*     printf("%lf\n", vector[i]); */
+    /* } */
 
     return 0;
 }

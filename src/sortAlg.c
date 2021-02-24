@@ -14,7 +14,7 @@ void insertionSort(const int n) {
     }
 }
 
-void shellSort(int vectorSize) {
+void shellSort(const int vectorSize) {
     int i, j,
         h = 1;
     double temp;
