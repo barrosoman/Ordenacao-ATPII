@@ -19,7 +19,6 @@ int getIndexWSeq(double buscaNumber, const int vectorSize) {
     return -1;
 }
 
-
 void binSearch(const int buscaSize, const int vectorSize) {
     FILE *resultado = fopen("resultado.dat", "w");
     int index;
@@ -38,7 +37,7 @@ int getIndexWBin(double buscaNumber, const int vectorSize) {
         mid = (min + max) / 2;
         if (fabs(buscaNumber - vector[mid]) < 0.0001) {
             return mid;
-        } else if  (buscaNumber < vector[mid]) {
+        } else if (buscaNumber < vector[mid]) {
             max = mid - 1;
         } else {
             min = mid + 1;

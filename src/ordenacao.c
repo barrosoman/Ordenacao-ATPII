@@ -36,9 +36,6 @@ int main() {
         default:
             break;
     }
-    /* for (int i = 0; i < vectorSize; i++) { */
-    /*     printf("%lf\n", vector[i]); */
-    /* } */
 
     return 0;
 }

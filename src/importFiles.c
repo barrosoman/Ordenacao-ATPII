@@ -12,7 +12,6 @@ int getVectorSize() {
     return n;
 }
 
-
 int getBuscaSize() {
     char line[128];
     int n = 0;

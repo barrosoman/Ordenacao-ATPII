@@ -15,24 +15,23 @@ void insertionSort(const int n) {
 }
 
 void shellSort(const int vectorSize) {
-    int i, j,
-        h = 1;
+    int i, j, h = 1;
     double temp;
 
-    while(h < vectorSize) {
-        h = 3*h+1;
+    while (h < vectorSize) {
+        h = 3 * h + 1;
     }
     while (h > 0) {
-        for(i = h; i < vectorSize; i++) {
+        for (i = h; i < vectorSize; i++) {
             temp = vector[i];
             j = i;
-            while (j > h-1 && temp < vector[j - h]) {
+            while (j > h - 1 && temp < vector[j - h]) {
                 vector[j] = vector[j - h];
                 j = j - h;
             }
             vector[j] = temp;
         }
-        h = h/3;
+        h = h / 3;
     }
 }
 
